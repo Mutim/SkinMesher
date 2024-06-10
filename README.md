@@ -23,7 +23,7 @@ If you would like to add to the project, please add base skins to the project us
 ```pycon
 > cd lib/skins/
 
-cd <skin_part>
+> cd <skin_part>
 ```
 
 Look at the skins that already exist. 
