@@ -1,3 +1,7 @@
+# Personal Ignored Files
+finals/
+complete_skins.zip
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
 # Byte-compiled / optimized / DLL files
@@ -183,6 +187,3 @@ fabric.properties
 
 # idea folder, uncomment if you don't need it
 # .idea
-
-# Personal Ignored Files
-./finals/
