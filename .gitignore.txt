@@ -1,5 +1,5 @@
 # Personal Ignored Files
-finals/*
+finals\*
 complete_skins.zip
 
 # Created by .ignore support plugin (hsz.mobi)
