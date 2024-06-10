@@ -34,6 +34,12 @@ def get_images() -> dict:
 
 def data_check():
     print('Performing Data Check on Files...')
+
+    # Create /finals directory if not exists
+    if not os.path.exists(r'.\finals'):
+        os.makedirs(r'.\finals')
+
+    # Verify that the parts directories are not empty
     for part in os.listdir(skin_path):
         if not len(os.listdir(f'{skin_path}\\{part}')) > 0:
             exit(fr'{skin_path}\{part} directory is empty!')
@@ -88,15 +94,10 @@ def build_skin(b, x, x1, x2):
 
 if __name__ == '__main__':
     t1 = time.time()
-    # Create /finals directory if not exists
-    if not os.path.exists(r'.\finals'):
-        os.makedirs(r'.\finals')
-
+    
     data_check()
-
     images = get_images()
     image_iterator(images)
-
     zip_and_send()
 
     length = time.time() - t1
